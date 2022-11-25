@@ -230,17 +230,25 @@ body {
 
 .main button {
   cursor: pointer;
-  width: 100px;
-  height: 100px;
-  font-size:30px;
-  margin-top: 30px;
-  padding: 15px;
+  height: 60px;
+  font-size:25px;
   width: 33%;
-  border:5px solid white;
+  border:3px solid white;
   border-radius: 45px;
   background-color: transparent;
   color: white;
   transition: 0.25s;
+  text-align: center;
+  margin:auto;
+}
+
+button.star {
+  width: 200px;
+}
+
+button.down{
+  width: 60px;
+  border-radius: 50%;
 }
 
 .main button:hover {
@@ -250,6 +258,8 @@ body {
 
 .main .button-icon {
   vertical-align: middle;
-  font-size:50px
+  font-size:25px
 }
+
+
 
