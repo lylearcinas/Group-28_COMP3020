@@ -131,7 +131,14 @@ body {
   margin-left:100px
 }
 
+.carousel {
+  overflow: auto;
+  white-space: nowrap;
+}
+
 .content {
+  right: 0px;
+  left: 100px;
   top: 115px;
   padding-top: 25px;
   padding-right: 25px;
@@ -168,10 +175,19 @@ body {
   padding-top: 10px;
 }
 
-.article h2 {
+.article h2 a{
   font-size: 50px;
   font-weight: 700;
   padding-bottom: 1px;
+  color: white;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 10px;
+}
+
+.article h2 a:hover {
+  background-color: white;
+  color:black;
 }
 
 .article .metadata {
@@ -181,6 +197,35 @@ body {
   align-items: center;
   padding-bottom: 10px;
   justify-content: space-between;
+}
+
+.row {
+  background-color: rgba(14, 14, 14, 0.779);
+  margin-left:25px; 
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 25px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row img {
+  margin-top: 10px;
+  height: 300px;
+  padding: 7px;
+}
+
+.row a {
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.25s;
+}
+
+.row a:hover {
+  color: black;
+  background-color: white;
 }
 
 .main button {
