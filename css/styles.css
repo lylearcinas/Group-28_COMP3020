@@ -210,7 +210,7 @@ body {
 }
 
 
-.article .metadata {
+.main .metadata {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -224,7 +224,7 @@ body {
   font-size:20px;
 }
 
-.article-interact {
+.main-interact {
   font-size: 30px;
   display:flex;
   justify-content: space-between;
