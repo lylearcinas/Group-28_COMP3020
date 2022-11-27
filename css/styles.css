@@ -132,7 +132,8 @@ body {
 }
 
 .carousel {
-  overflow: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
   white-space: nowrap;
 }
 
@@ -158,6 +159,7 @@ body {
   font-size: 20px;
   display: flex;
   flex-direction: row;
+  overflow-y: visible;
 }
 
 .article .main {
@@ -170,9 +172,27 @@ body {
 }
 
 .article img {
-  height: 350px;
+  height: 320px;
   padding: 30px;
   padding-top: 10px;
+  transition: .25s;
+}
+
+.article img:hover {
+  cursor: pointer;
+
+  transform: scale(1.07);
+}
+
+.article a {
+  color: white;
+  border-radius: 10px;
+  transition: 0.25s;
+}
+
+.article a:hover {
+  background-color: white;
+  color: black;
 }
 
 .article h2 a{
@@ -180,7 +200,6 @@ body {
   font-weight: 700;
   padding-bottom: 1px;
   color: white;
-  text-decoration: none;
   transition: 0.25s;
   border-radius: 10px;
 }
@@ -190,13 +209,41 @@ body {
   color:black;
 }
 
+
 .article .metadata {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  font-size: 15px;
-  align-items: center;
-  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 25px;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.genre {
+  font-size:20px;
+}
+
+.article-interact {
+  font-size: 30px;
+  display:flex;
   justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button-row {
+  width: 500px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.bottom-text {
+  width: 250px;
+  align-items: center;
 }
 
 .row {
@@ -208,17 +255,25 @@ body {
   font-size: 20px;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .row img {
   margin-top: 10px;
   height: 300px;
   padding: 7px;
+  transition: 0.25s;
+}
+
+.row img:hover {
+  cursor: pointer;
+  transform: scale(1.07);
 }
 
 .row a {
+  font-size: 25px;
+  float:right;
   color: white;
-  text-decoration: none;
   border-radius: 5px;
   transition: 0.25s;
 }
@@ -232,19 +287,16 @@ body {
   cursor: pointer;
   height: 60px;
   font-size:25px;
-  width: 33%;
+  width: 250px;
   border:3px solid white;
   border-radius: 45px;
   background-color: transparent;
   color: white;
   transition: 0.25s;
   text-align: center;
-  margin:auto;
+  margin:5px;
 }
 
-button.star {
-  width: 200px;
-}
 
 button.down{
   width: 60px;
