@@ -1,4 +1,29 @@
-function MouseWheelHandler(e, element) {
+
+const popScrollLeft = document.getElementById('popScrollLeft');
+const popScrollRight = document.getElementById('popScrollRight');
+const fanScrollLeft = document.getElementById('fanScrollLeft');
+const fanScrollRight = document.getElementById('fanScrollRight');
+
+const scrollVal = 750;
+
+
+popScrollLeft.onclick = () => {
+    document.getElementById('popCarousel').scrollLeft-=scrollVal;
+};
+
+popScrollRight.onclick = () => {
+    document.getElementById('popCarousel').scrollLeft+=scrollVal;
+};
+
+fanScrollLeft.onclick = () => {
+    document.getElementById('fanCarousel').scrollLeft-=scrollVal;
+};
+
+fanScrollRight.onclick = () => {
+    document.getElementById('fanCarousel').scrollLeft+=scrollVal;
+};
+
+/*function MouseWheelHandler(e, element) {
     var delta = 0;
     if (typeof e === 'number') {
         delta = e;
@@ -85,3 +110,4 @@ window.onload = function() {
         }
     }
 }
+*/

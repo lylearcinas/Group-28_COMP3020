@@ -67,7 +67,6 @@ function fillDesc(i, elementID) {
 function addPicture(i, elementID) {
     var value = '<img src =\"' + books[i].img + '\"/>';
     document.getElementById(elementID).innerHTML += value;
-    console.log(elementID);
 }
 
 function fillCarouselByTable(table, elementID) {

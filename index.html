@@ -17,7 +17,7 @@
         <span>the <strong><em>better</em></strong> book finder.</span>
         <a href="#">
             <div class = "profile">Username
-                <i class="profile-icon"><i class='bx bxs-user-circle'></i></i>
+                <i class="profile-icon" ><i class='bx bxs-user-circle'></i></i>
             </div>
         </a>
         </div>
@@ -37,21 +37,21 @@
                 <div class = "article" id="featured1"></div>
                 <div class="row">   
                     <h2>Popular <span><a href="#">View All</a></span></h3>
-                    <div class="carousel">
+                    <div class="carousel" id="popCarousel">
                         <div class = "control-container">
-                            <div class = "left-scroll button scroll"><i class='bx bx-chevron-left'></i></div>
-                            <div class = "right-scroll button scroll"><i class='bx bx-chevron-right' ></i></div>
+                            <div class = "left-scroll button scroll" id="popScrollLeft">Test<i class='bx bx-chevron-left'></i></div>
+                            <div class = "right-scroll button scroll"id="popScrollRight"><i class='bx bx-chevron-right' ></i></div>
                         </div>
                         <div class="carousel-wrapper" id="popular">
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <h2>Popular<a href="#">View All</a></span></h3>
-                    <div class="carousel" id="carousel">
+                    <h2>Fantasy<a href="#">View All</a></span></h3>
+                    <div class="carousel" id="fanCarousel">
                         <div class = "control-container">
-                            <div class = "left-scroll button scroll" id="left-scroll"><i class="fa-thin fa-left"></i></div>
-                            <div class = "right-scroll button scroll" id="right-scroll"><i class="fa-thin fa-right"></i></div>
+                            <div class = "left-scroll button scroll" id="fanScrollLeft"><i class='bx bx-chevron-left'></i></div>
+                            <div class = "right-scroll button scroll" id="fanScrollRight"><i class='bx bx-chevron-right' ></i></div>
                         </div>
                         <div class="carousel-wrapper" id="fantasy">
                         </div>
@@ -62,8 +62,8 @@
                     <h2>Classic <span><a href="#">View All</a></span></h3>
                     <div class="carousel">
                         <div class = "control-container">
-                            <div class = "left-scroll button scroll" id="left-scroll"><i class="fa-thin fa-left"></i></div>
-                            <div class = "right-scroll button scroll" id="right-scroll"><i class="fa-thin fa-right"></i></div>
+                            <div class = "left-scroll button scroll" id="left-scroll"><i class='bx bx-chevron-left'></i></div>
+                            <div class = "right-scroll button scroll" id="right-scroll"><i class='bx bx-chevron-right' ></i></div>
                         </div>
                         <div class="carousel-wrapper" id="classic">
                         </div>
@@ -72,6 +72,6 @@
             </div>
         </div>
         <script src="FillHomePage.js"></script> 
-        <script type="text/javascript" src="carousel.js"></script>
+        <script src="carousel.js"></script>
     </body>
 </html>
