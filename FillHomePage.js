@@ -3,7 +3,7 @@
 fillDesc(0, "featured1");
 fillDesc(1, "featured2");
 fillCarouselByTable("Popular", "popular");
-fillCarouselByTable("For You", "for-you");
+fillCarouselByGenre("Fantasy", "fantasy");
 fillCarouselByGenre("Classic", "classic");
 
 
