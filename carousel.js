@@ -3,6 +3,8 @@ const popScrollLeft = document.getElementById('popScrollLeft');
 const popScrollRight = document.getElementById('popScrollRight');
 const fanScrollLeft = document.getElementById('fanScrollLeft');
 const fanScrollRight = document.getElementById('fanScrollRight');
+const claScrollLeft = document.getElementById('claScrollLeft');
+const claScrollRight = document.getElementById('claScrollRight');
 
 const scrollVal = 750;
 
@@ -21,6 +23,14 @@ fanScrollLeft.onclick = () => {
 
 fanScrollRight.onclick = () => {
     document.getElementById('fanCarousel').scrollLeft+=scrollVal;
+};
+
+claScrollLeft.onclick = () => {
+    document.getElementById('claCarousel').scrollLeft-=scrollVal;
+};
+
+claScrollRight.onclick = () => {
+    document.getElementById('claCarousel').scrollLeft+=scrollVal;
 };
 
 /*function MouseWheelHandler(e, element) {
