@@ -313,5 +313,42 @@ button.down{
   font-size:25px
 }
 
+.friendscontent {
+  right: 0px;
+  left: 100px;
+  top: 115px;
+  padding-top: 25px;
+  padding-right: 25px;
+  bottom: 0;
+  overflow: auto;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+}
+
+.content1 {
+  right: 800px;
+  left: 10px;
+  top: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  bottom: 0;
+  overflow: auto;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+}
+.content2 {
+  right: 0px;
+  left: 1880px;
+  top: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  bottom: 0;
+  overflow: auto;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+}
 
 
