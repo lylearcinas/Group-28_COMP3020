@@ -152,6 +152,7 @@ body {
 
 .article {
   background-color: rgba(14, 14, 14, 0.779);
+  height: 350px;
   margin-left:25px; 
   margin-bottom: 25px;
   padding: 25px;
@@ -160,6 +161,11 @@ body {
   display: flex;
   flex-direction: row;
   overflow-y: visible;
+
+}
+
+.featured1 {
+  background-color: aqua;
 }
 
 .article .main {
@@ -171,6 +177,16 @@ body {
   justify-content: space-between;
 }
 
+.article p {
+  height: 100%;
+  max-width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
 .article img {
   height: 320px;
   padding: 30px;
@@ -180,7 +196,6 @@ body {
 
 .article img:hover {
   cursor: pointer;
-
   transform: scale(1.07);
 }
 
