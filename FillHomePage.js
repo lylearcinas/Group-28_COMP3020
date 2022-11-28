@@ -2,7 +2,10 @@
 
 fillDesc(0, "featured1");
 fillDesc(1, "featured2");
+fillCarouselByTable("Popular", "popular");
 fillCarouselByTable("For You", "for-you");
+fillCarouselByGenre("Classic", "classic");
+
 
 /*
 for(var j = 0; j < 12; j++) {
@@ -70,6 +73,14 @@ function addPicture(i, elementID) {
 function fillCarouselByTable(table, elementID) {
     for (var i = 0; i < books.length; i++) {
         if (books[i].tables.includes(table)) {
+            addPicture(i, elementID);
+        }
+    }
+}
+
+function fillCarouselByGenre(genre, elementID) {
+    for (var i = 0; i < books.length; i++) {
+        if (books[i].genres.includes(genre)) {
             addPicture(i, elementID);
         }
     }
