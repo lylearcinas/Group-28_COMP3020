@@ -23,7 +23,7 @@ function searchClicked() {
     else {
         var found = 0;
         for(var i = 0; i < books.length; i++) {
-            if(books[i].title.toLowerCase().search(searchData) > 0 || books[i].author.toLowerCase().search(searchData) > 0 || books[i].year.search(searchData) > 0 || books[i].series.toLowerCase().search(searchData) > 0 || books[i].about.toLowerCase().search(searchData) > 0 ) {                 
+            if(books[i].title.toLowerCase().search(searchData) > 0 || books[i].author.toLowerCase().search(searchData) > 0 || books[i].series.toLowerCase().search(searchData) > 0 || books[i].about.toLowerCase().search(searchData) > 0 ) {                 
                 fillList(i,bodyElement);
                 found += 1;
             } 
