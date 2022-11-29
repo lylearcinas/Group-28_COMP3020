@@ -23,10 +23,10 @@ function searchClicked() {
     else {
         var found = 0;
         for(var i = 0; i < books.length; i++) {
-            if(books[i].title.toLowerCase().search(searchData) > 0 || books[i].author.toLowerCase().search(searchData) > 0 || books[i].series.toLowerCase().search(searchData) > 0 || books[i].about.toLowerCase().search(searchData) > 0 ) {                 
+            if(books[i].title.toLowerCase().includes(searchData) || books[i].author.toLowerCase().includes(searchData) || books[i].series.toLowerCase().includes(searchData) || books[i].about.toLowerCase().includes(searchData)) {                 
                 fillList(i,bodyElement);
                 found += 1;
-            } 
+            }
         }
         if(found === 0) {
             var val = '<div class="article">' +
