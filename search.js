@@ -47,7 +47,7 @@ function displayError() {
 function showSearchBox() {
     var val = '<div class = "article">' +
                         '<h2>Search here: </h2>' +
-                        '<input type = "text" id = "searchBox" placeholder = "Author / title / year / series / story characters" style=" font-size: large;"> <br>' +
+                        '<input type = "text" id = "searchBox" placeholder = "Author / title / series / story characters" style=" font-size: large;"> <br>' +
                         '<button span class="button-icon" onclick = "searchClicked()" style="font-size:2vw;"></span> Search</a> </button>' +                  
                 '</div>';
     document.getElementById(bodyElement).innerHTML = val;
