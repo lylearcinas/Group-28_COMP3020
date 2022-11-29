@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <link rel="stylesheet" href="css/styles.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700">
-
-</head>
-<title>
-  BetterReads - The better book finder
-</title>
-<header>
-  <h1><i class='bx bx-book-content'></i> BetterReads</h1>
-  <a href="#">
-    <div class="profile">Username
-      <i class="profile-icon"><i class='bx bxs-user-circle'></i></i>
-    </div>
-  </a>
-  </div>
-</header>
-<nav class="sidebar">
-  <div class="sidebar-highlight">
-    <li><a href="index.html" class=selected><i class='bx bx-home-alt-2'></i></a></li>
-    <li><a href="#"><i class='bx bx-search-alt-2'></i></a></li>
-    <li><a href="#"><i class='bx bx-library'></i></a></li>
-    <li><a href="#"><i class='bx bx-group'></i></a></li>
-    <li><a href="#"><i class='bx bx-cog'></i></box-icon></a></li>
-    <li><a href="#"><i class='bx bx-question-mark'></i></a></li>
-  </div>
-</nav>
-
-<body>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <script src="bookData.js"></script>
+    </head>
+    <title>
+        BetterReads - Reading but better
+    </title>
+    <header>
+        <h1><i class='bx bx-book-content'></i> BetterReads</h1>
+        <span>the <strong><em>better</em></strong> book finder.</span>
+        <a href="#">
+            <div class = "profile">Username
+                <i class="profile-icon" ><i class='bx bxs-user-circle'></i></i>
+            </div>
+        </a>
+        </div>
+    </header>
+    <nav class="sidebar">
+        <div class = "sidebar-highlight">
+            <li><a href="index.html"><i class='bx bx-home-alt-2' ></i></a></li>
+            <li><a href="search.html"><i class='bx bx-search-alt-2' ></i></a></li>
+            <li><a href="library.html" class = selected><i class='bx bx-library' ></i></a></li>
+            <li><a href="friends.html"><i class='bx bx-group'></i></a></li>
+            <li><a href="settings.html"><i class='bx bx-cog'></i></box-icon></a></li>
+        </div>
+    </nav>
+    <body>
     <div class="content">
       <div class="article">
         <div class="main">
@@ -40,32 +40,44 @@
           </button>
       </div>
     </div>
-    <div class="article">
+    <div class="row">
       <div class="main">
           <h2>Currently Reading</h2>
-          <div class="carousel">
-                        <div class="carousel-wrapper">
+          <div class="carousel" id="popCarousel">
+            <div class = "control-container">
+                <div class = "left-scroll button scroll" id="popScrollLeft"><i class='bx bx-chevron-left'></i></div>
+                <div class = "right-scroll button scroll"id="popScrollRight"><i class='bx bx-chevron-right' ></i></div>
+            </div>
+            <div class="carousel-wrapper">
                             <img src="https://m.media-amazon.com/images/I/51ibfs0eF8L._SX498_BO1,204,203,200_.jpg"/>
-                            <img src="https://s26162.pcdn.co/wp-content/uploads/2018/02/gatsby-original2.jpg"/>
-                            <img src="https://m.media-amazon.com/images/I/51ibfs0eF8L._SX498_BO1,204,203,200_.jpg"/>
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1660273739i/11870085.jpg"/>
+                            <img src="https://difficultrun.nathanielgivens.com/wp-content/uploads/2016/05/Game-of-Thrones.jpg"/>
             </div>
           </div>
         </div>
       </div>
-      <div class="article">
+      <div class="row">
         <div class="main">
           <h2>Want to Read</h2>
-          <<div class="carousel">
+          <div class="carousel">
+            <div class = "control-container">
+              <div class = "left-scroll button scroll" id="popScrollLeft"><i class='bx bx-chevron-left'></i></div>
+              <div class = "right-scroll button scroll"id="popScrollRight"><i class='bx bx-chevron-right' ></i></div>
+          </div>
                         <div class="carousel-wrapper">
                             <img src="https://m.media-amazon.com/images/I/51BrAd1U5LL.jpg"/>
             </div>
           </div>
         </div>
       </div>
-    <div class="article">
+    <div class="row">
         <div class="main">
           <h2>Read</h2>
-          <<div class="carousel">
+          <div class="carousel">
+            <div class = "control-container">
+              <div class = "left-scroll button scroll" id="popScrollLeft"><i class='bx bx-chevron-left'></i></div>
+              <div class = "right-scroll button scroll"id="popScrollRight"><i class='bx bx-chevron-right' ></i></div>
+          </div>
                         <div class="carousel-wrapper">
                             <img src="https://m.media-amazon.com/images/I/81rXOM4KMwL.jpg"/>
             </div>
