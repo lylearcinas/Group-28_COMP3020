@@ -17,6 +17,17 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 2em;
+  }
+
+  input[type=text] {
+    border: 0px;
+    border-radius: 100px;
+  }
   
   .sidebar-highlight {
     background-color: rgba(14, 14, 14, 0.779);
