@@ -17,7 +17,7 @@
         <span>the <strong><em>better</em></strong> book finder.</span>
         <a href="#">
             <div class = "profile">Username
-                <i class="profile-icon"><i class='bx bxs-user-circle'></i></i>
+                <i class="profile-icon" ><i class='bx bxs-user-circle'></i></i>
             </div>
         </a>
         </div>
@@ -27,20 +27,59 @@
             <li><a href="index.html"><i class='bx bx-home-alt-2' ></i></a></li>
             <li><a href="search.html" class = selected><i class='bx bx-search-alt-2' ></i></a></li>
             <li><a href="#"><i class='bx bx-library' ></i></a></li>
-            <li><a href="#"><i class='bx bx-group'></i></a></li>
+            <li><a href="friends.html"><i class='bx bx-group'></i></a></li>
             <li><a href="settings.html"><i class='bx bx-cog'></i></box-icon></a></li>
         </div>
     </nav>
-    <body>
-        <div class = "content" id="searchList">
-            <div class = "article">
-                <h2>Search here: </h2> 
-                <input type = "text" id = "searchBox" width="50%"> <br>
-                <button span class="button-icon" onclick = searchClicked() style="font-size:2vw;"><i class=\'bx bxs-book-add\'></i></span> Search</a> </button>
+    <body>        
+            <div class = "content" id="searchResult">
+
+                <div class = "article" >
+                    <h2>Search here: </h2> 
+                    <input type = "text" id = "searchBox" placeholder = "Author / title / series / story characters" style=" font-size: large;"> <br>
+                    <button span class="button-icon" onclick = "searchClicked()" style="font-size:2vw;"><i class=\'bx bxs-book-add\'></i></span> Search</a> </button>                    
+                </div>
+
+                <div class="row">   
+                    <h2>Popular <span><a href="#">View All</a></span></h3>
+                    <div class="carousel" id="popCarousel">
+                        <div class = "control-container">
+                            <div class = "left-scroll button scroll" id="popScrollLeft">Test<i class='bx bx-chevron-left'></i></div>
+                            <div class = "right-scroll button scroll"id="popScrollRight"><i class='bx bx-chevron-right' ></i></div>
+                        </div>
+                        <div class="carousel-wrapper" id="popular">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2>Fantasy<a href="#">View All</a></span></h3>
+                    <div class="carousel" id="fanCarousel">
+                        <div class = "control-container">
+                            <div class = "left-scroll button scroll" id="fanScrollLeft"><i class='bx bx-chevron-left'></i></div>
+                            <div class = "right-scroll button scroll" id="fanScrollRight"><i class='bx bx-chevron-right' ></i></div>
+                        </div>
+                        <div class="carousel-wrapper" id="fantasy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">   
+                    <h2>Classic <span><a href="#">View All</a></span></h3>
+                    <div class="carousel">
+                        <div class = "control-container">
+                            <div class = "left-scroll button scroll" id="left-scroll"><i class='bx bx-chevron-left'></i></div>
+                            <div class = "right-scroll button scroll" id="right-scroll"><i class='bx bx-chevron-right' ></i></div>
+                        </div>
+                        <div class="carousel-wrapper" id="classic">
+                        </div>
+                    </div>
+                </div>
                 
             </div>
-        </div>     
+
         <script src="FillHomePage.js"></script> 
-        <script src="search.js"></script> 
+        <script src="carousel.js"></script>
+        <script src="search.js"></script>
+        
     </body>
 </html>
