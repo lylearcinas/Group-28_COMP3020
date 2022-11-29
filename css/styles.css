@@ -251,7 +251,7 @@ body {
   float:right;
 }
 
-.article {
+.searchBar {
   background-color: rgba(14, 14, 14, 0.779);
   /*height: 350px;*/
   margin-left:25px; 
@@ -263,6 +263,80 @@ body {
   flex-direction: row;
   overflow-y: visible;
 
+}
+
+.searchBar button {
+  cursor: pointer;
+  height: 60px;
+  font-size:25px;
+  width: 250px;
+  border:3px solid white;
+  border-radius: 45px;
+  background-color: transparent;
+  color: white;
+  transition: 0.25s;
+  text-align: center;
+  margin:5px;
+}
+
+.searchBar button:hover {
+  background-color: white;
+  color:black
+}
+
+
+.article {
+  background-color: rgba(14, 14, 14, 0.779);
+  height: 350px;
+  margin-left:25px; 
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 25px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  overflow-y: visible;
+
+}
+
+.gridContainer {
+  background-color: rgba(14, 14, 14, 0.779);
+  margin-left:25px; 
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 25px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid{
+  display: flex;
+  overflow-y: visible;
+  flex-wrap: wrap;
+}
+
+.grid img {
+  height: 320px;
+  padding: 30px;
+  padding-top: 10px;
+  transition: .25s;
+}
+
+.grid img:hover{
+  cursor: pointer;
+  transform: scale(1.07);
+  margin: 2px;
+}
+
+.gridContainer h2{
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 1px;
+  color: white;
+  transition: 0.25s;
+  border-radius: 10px;
+  float:left;
 }
 
 .article .main {

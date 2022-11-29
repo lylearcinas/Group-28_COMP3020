@@ -6,9 +6,8 @@ var bodyElement = "searchResult";
     fill(j, bodyElement);
 }*/
 
-fillCarouselByTable("Popular", "popular");
-fillCarouselByGenre("Fantasy", "fantasy");
-fillCarouselByGenre("Classic", "classic");
+fillCarouselByTable("For You", "for-you");
+
 
 //listener for search button 
 function searchClicked() {
@@ -23,14 +22,14 @@ function searchClicked() {
     else {
         var found = 0;
         for(var i = 0; i < books.length; i++) {
-            if(books[i].title.toLowerCase().includes(searchData) || books[i].author.toLowerCase().includes(searchData) || books[i].series.toLowerCase().includes(searchData) || books[i].about.toLowerCase().includes(searchData)) {                 
+            if(books[i].title.toLowerCase().includes(searchData) || books[i].author.toLowerCase().includes(searchData) || books[i].series.toLowerCase().includes(searchData) || books[i].year === searchData) {                 
                 fillList(i,bodyElement);
                 found += 1;
             }
         }
         if(found === 0) {
-            var val = '<div class="article">' +
-                '<h2>' + "No related book found in the database. " + '</h2>' +
+            var val = '<div class="searchBar">' +
+                '<h3>' + "No related book found in the database. " + '</h3>' +
                 '</div>';
             document.getElementById(bodyElement).innerHTML += val;
         }
@@ -38,17 +37,16 @@ function searchClicked() {
 }
 
 function displayError() {
-    var val = '<div class="article">' +
-    '<h2>' + "Please enter some information to search in the box. Please search again." + '</h2>' + '<br>'
+    var val = '<div class="gridContainer">' +
+    '<h3>' + "Please enter some information to search in the box. Please search again." + '</h3>' + '<br>'
      '</div>';
      document.getElementById(bodyElement).innerHTML += val; 
 }
 
 function showSearchBox() {
-    var val = '<div class = "article">' +
-                        '<h2>Search here: </h2>' +
-                        '<input type = "text" id = "searchBox" placeholder = "Author / title / series / story characters" style=" font-size: large;"> <br>' +
-                        '<button span class="button-icon" onclick = "searchClicked()" style="font-size:2vw;"></span> Search</a> </button>' +                  
+    var val = '<div class = "searchBar">' +
+                        '<input type = "text" id = "searchBox" placeholder = "Search for author, title, series, or year..." style=" font-size: large;"> <br>' +
+                        '<button span class="button-icon" onclick = "searchClicked()" style="font-size:2vw;"><i class=\'bx bx-search-alt-2\'></i></span> Search</a> </button>' +                  
                 '</div>';
     document.getElementById(bodyElement).innerHTML = val;
 }
